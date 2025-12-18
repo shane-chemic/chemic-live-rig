@@ -32,7 +32,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 600px;
             margin: 0 auto;
         }
 
@@ -71,44 +71,49 @@
             letter-spacing: 1px;
         }
 
-        .dropbox-container {
+        .audio-section {
             background: var(--cream-light);
             border: 2px solid var(--red);
-            padding: 20px;
+            padding: 40px;
+            text-align: center;
             margin-bottom: 24px;
         }
 
-        .dropbox-embed {
-            width: 100%;
-            height: 500px;
-            border: none;
+        .audio-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
 
-        .dropbox-fallback {
-            text-align: center;
-            padding: 40px 20px;
+        .audio-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--red);
+            margin-bottom: 8px;
         }
 
-        .dropbox-fallback-link {
+        .audio-desc {
+            font-size: 0.8rem;
+            color: var(--brown);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .dropbox-link {
             display: inline-block;
             background: var(--red);
             color: var(--cream);
-            padding: 14px 28px;
+            padding: 16px 32px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             transition: all 0.15s ease;
         }
 
-        .dropbox-fallback-link:hover {
+        .dropbox-link:hover {
             background: var(--red-dark);
-        }
-
-        .dropbox-note {
-            font-size: 0.75rem;
-            color: var(--brown);
-            margin-top: 16px;
         }
 
         .status-line {
@@ -129,8 +134,8 @@
                 font-size: 1.3rem;
             }
 
-            .dropbox-embed {
-                height: 400px;
+            .audio-section {
+                padding: 30px 20px;
             }
         }
     </style>
@@ -141,20 +146,14 @@
         
         <div class="header">
             <h1>AUDIO</h1>
-            <div class="subtitle">MARCH REUNION // TRACKS + STEMS</div>
+            <div class="subtitle">TRACKS // STEMS // BACKUPS</div>
         </div>
 
-        <div class="dropbox-container">
-            <iframe 
-                class="dropbox-embed"
-                src="https://www.dropbox.com/scl/fo/kyhi62klk2v1zlc5qu15q/AGVd06VV0p46VaC66Vp9IAs?rlkey=z4mzgql8yqokvui8u4g3f2rxp&st=oj4nyqf5&dl=0&raw=1"
-                allowfullscreen>
-            </iframe>
-            
-            <div class="dropbox-fallback">
-                <p class="dropbox-note">If the embed doesn't load, open directly:</p>
-                <a href="https://www.dropbox.com/scl/fo/kyhi62klk2v1zlc5qu15q/AGVd06VV0p46VaC66Vp9IAs?rlkey=z4mzgql8yqokvui8u4g3f2rxp&st=oj4nyqf5&dl=0" target="_blank" class="dropbox-fallback-link">Open in Dropbox</a>
-            </div>
+        <div class="audio-section">
+            <div class="audio-icon">📁</div>
+            <div class="audio-title">Dropbox Folder</div>
+            <div class="audio-desc">Tracks // Stems // Backups</div>
+            <a href="https://www.dropbox.com/scl/fo/kyhi62klk2v1zlc5qu15q/AGVd06VV0p46VaC66Vp9IAs?rlkey=z4mzgql8yqokvui8u4g3f2rxp&st=oj4nyqf5&dl=0" target="_blank" class="dropbox-link">Open in Dropbox</a>
         </div>
 
         <div class="status-line">
